@@ -1,5 +1,3 @@
-# gwsw-revisies
-GWSW Revisies - Deelmodel en toepassingen
+# monitor-2028
+Monitor 2028 - Peiling Stedelijk Water voorzieningen in 2028
 
-De GWSW-Opera platform is initiator van dit deelmodel. 
-De basis ligt bij een PoC gericht op het ontwikkelen en toetsen van het inmeetproces, dus de gegevensuitwisseling van de landmeter naar de beheerder. 
