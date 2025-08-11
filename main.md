@@ -45,10 +45,10 @@ Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwali
 Vanaf medio 2025 is dan ook een gegevens-peiling op de GWSW Server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
 Die peiling levert een beeld van de gegevenskwaliteit, uitgedrukt in volledigheid en actualiteit.
 
-<div class="box"><pre>
+<mark><b>
 DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN EN UITSPRAKEN  
 OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
-</pre></div>
+</b></mark>
 
 De peiling wordt dagelijks bijgewerkt en gepubliceerd via 
 
@@ -138,13 +138,15 @@ Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven.
 Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - status monitor].
 Die site toontop aanvraag ook de details van de kwaliteitsmeting per gemeente.
 
-<div class="box"><pre><b>
+<mark><b>
 DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN EN UITSPRAKEN  
 OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
+</b></mark>
 
+<mark><b>
 DE KWALITEITSEISEN WORDEN NOG VASTGEGSTELD, NET ZOALS DE FORMULES OM TE KOMEN TOT  
 EEN ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI.
-</b></pre></div>
+</b></mark>
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
 
