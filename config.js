@@ -8,12 +8,17 @@ var respecConfig =
   license: "cc0",
    
   editors: [{
+    name: "Arianne Fijan",
+    url: "mailto:arianne.fijan@rioned.org",
+    company: "Stichting RIONED",
+    companyURL: "https://www.riool.net"
+    }],
+  authors: [{
     name: "Eric Oosterom",
     url: "mailto:eric.oosterom@rioned.org",
     company: "Stichting RIONED",
     companyURL: "https://www.riool.net"
-  }],
-  authors: [{
+    },{
     name: "Marinus Vonhof",
     url: "mailto:marinus.vonhof@marIvon.nl",
     company: "marIvon",
