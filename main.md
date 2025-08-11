@@ -78,7 +78,6 @@ Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die
 [Goot]: http://data.gwsw.nl/Goot
 [Drukleiding]: http://data.gwsw.nl/Drukleiding
 
-
 ### Putten en bouwwerken
 Van de putten en bouwwerken  worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie groep in de volgende tabel):
 * [Rioolput]
@@ -130,7 +129,7 @@ Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven.
 * <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Onvoldoende
 * <span class="kwalPurple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Fout in analyse
 
-Zoals gezegd wordt de kwaliteit dagelijks gemeten voor alle gemeenten en gepresenteerd op [apps.gwsw.nl status monitor].
+Zoals gezegd wordt de kwaliteit dagelijks gemeten voor alle gemeenten en gepresenteerd op [apps.gwsw.nl - status monitor].
 Op die site kunnen ook de details van de kwaliteitsmeting per gemeente worden opgevraagd.
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
