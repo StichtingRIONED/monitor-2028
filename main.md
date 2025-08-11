@@ -129,8 +129,8 @@ Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven.
 * <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Onvoldoende
 * <span class="kwalPurple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Fout in analyse
 
-Zoals gezegd wordt de kwaliteit dagelijks gemeten voor alle gemeenten en gepresenteerd op [apps.gwsw.nl - status monitor].
-Op die site kunnen ook de details van de kwaliteitsmeting per gemeente worden opgevraagd.
+Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - status monitor].
+Die site toont indien gewenst ook de details van de kwaliteitsmeting per gemeente.
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
 
