@@ -134,7 +134,7 @@ Die site toont indien gewenst ook de details van de kwaliteitsmeting per gemeent
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
 
-Een voorbeeld van deze kwaliteitseisen:
+De nu actieve kwaliteitseisen (een globale proefneming):
 
 **Putten en bouwwerken**  
 
