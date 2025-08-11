@@ -34,13 +34,14 @@ Vragen over deze website en de Monitor 2028 kunt u stellen via arianne.fijan@rio
 
 Het GWSW is het uitgelezen middel voor het uitvoeren van een gegevens-peiling voor de Monitor 2028. 
 
-Het GWSW is een open (linked-data) platform vanwaar gegevens met zogenaamde queries (geformatteerde vragen) worden opgevraagd.
-Gemeenten leveren periodiek hun gegevens aan op de GWSW Server.  
+Het GWSW is een open (linked-data) platform en gemeenten leveren periodiek hun gegevens aan op de GWSW Server.
+Deze gegevens zijn met allerlei toepassingen en met zogenaamde queries (geformatteerde vragen) te gebruiken.
 
 Op dit moment is ruim 67% van de gemeenten geregistreerd in de GWSW-database, maar er valt nog veel werk te verzetten om de kwaliteit van de aangeleverde gegevens op peil te brengen.  
 
 Zie daarvoor ook de overzichten op [apps.gwsw.nl - overzicht datasets](https://apps.gwsw.nl/item_validate_nl)
 
+Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwaliteit. 
 Vanaf medio 2025 is dan ook een gegevens-peiling door de GWSW-applicaties actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
 Die peiling levert een beeld van de gegevenskwaliteit, uitgedrukt in volledigheid en actualiteit.
 
@@ -78,8 +79,8 @@ Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die
 [Goot]: http://data.gwsw.nl/Goot
 [Drukleiding]: http://data.gwsw.nl/Drukleiding
 
-### Putten en bouwwerken
-Van de putten en bouwwerken  worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie groep in de volgende tabel):
+### Knooppunten
+Van de putten en bouwwerken  worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
 * [Rioolput]
 * [Gemaal]
 * [Reservoir]
@@ -98,7 +99,7 @@ Stelsel           | groep      | type           | aantal | jaar
 [Gemengd stelsel] | [Gemaal]   | [Rioolgemaal]  | 1      | 1980
 
 ### Leidingen
-Van de leidingen worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie groep in de volgende tabel):
+Van de leidingen worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
 * [Mechanische rioolleiding]
 * [Vrijverval rioolleiding]
 * [Mechanische transportleiding]
@@ -130,26 +131,44 @@ Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven.
 * <span class="kwalPurple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Fout in analyse
 
 Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - status monitor].
-Die site toont indien gewenst ook de details van de kwaliteitsmeting per gemeente.
+Die site toontop aanvraag ook de details van de kwaliteitsmeting per gemeente.
+
+<div class="box"><pre><b>
+DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN EN UITSPRAKEN  
+OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
+
+DE KWALITEITSEISEN WORDEN NOG VASTGEGSTELD, NET ZOALS DE FORMULES OM TE KOMEN TOT  
+EEN ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI.
+</b></pre></div>
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
 
-De nu actieve kwaliteitseisen (een globale proefneming):
+De nu actieve kwaliteitseisen (de globale proefneming):
 
-**Putten en bouwwerken**  
+**Kwaliteitseisen algemeen**  
+
+id          | mess                       | weight | eh | <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+------------|----------------------------|--------|----|---------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------
+actualiteit | Dataset voldoende actueel? | 3      | y  | <1                                                            | <3                                                             | >=3
+
+**Kwaliteitseisen knooppunten (putten en bouwwerken)**  
 
 id           | mess                                     | weight | eh | <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
--------------|------------------------------------------|--------|----|---------|--------|--------
-aantal       | Verhouding aantal knooppunten / inwoners | 3      | %  | >5 <100 | >0     | =0     
-jaar         | Aanlegjaar aanwezig?                     | 1      | %  | >=5     | >0     | =0     
-Inspectieput | Inspectieputten aanwezig?                | 1      | %  | >=85    | >=80   | <80    
+-------------|------------------------------------------|--------|----|---------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------
+aantal       | Verhouding aantal knooppunten / inwoners | 3      | %  | >5 <100                                                       | >0                                                             | =0
+jaar         | Aanlegjaar aanwezig?                     | 1      | %  | >=5                                                           | >0                                                             | =0
+Inspectieput | Inspectieputten aanwezig?                | 1      | %  | >=85                                                          | >=80                                                           | <80
 
-**Leidingen**  
+**Kwaliteitseisen leidingen**  
 
 id                     | mess                                   | weight | eh | <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
------------------------|----------------------------------------|--------|----|---------|--------|--------
-aantal                 | Verhouding aantal leidingen / inwoners | 3      | %  | >5 <100 | >0     | =0     
-jaar                   | Aanlegjaar aanwezig?                   | 1      | %  | >=95    | >=80   | <80    
-lengte                 | Gemiddelde leidinglengte               | 1      | m  | >=30    | >=20   | <20   
-VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?      | 1      | %  | >=80    | >=70   | <70    
+-----------------------|----------------------------------------|--------|----|---------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------
+aantal                 | Verhouding aantal leidingen / inwoners | 3      | %  | >5 <100                                                       | >0                                                             | =0
+jaar                   | Aanlegjaar aanwezig?                   | 1      | %  | >=95                                                          | >=80                                                           | <80
+lengte                 | Gemiddelde leidinglengte               | 1      | m  | >=30                                                          | >=20                                                           | <20
+VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?      | 1      | %  | >=80                                                          | >=70                                                           | <70
 
+**Kwaliteit per gemeente/dataset**
+
+De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
+De formule daarvoor is ...
