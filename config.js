@@ -14,6 +14,11 @@ var respecConfig =
     companyURL: "https://www.riool.net"
     }],
   authors: [{
+    name: "Arianne Fijan",
+    url: "mailto:arianne.fijan@rioned.org",
+    company: "Stichting RIONED",
+    companyURL: "https://www.riool.net"
+    },{
     name: "Eric Oosterom",
     url: "mailto:eric.oosterom@rioned.org",
     company: "Stichting RIONED",
