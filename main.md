@@ -42,8 +42,13 @@ Op dit moment is ruim 67% van de gemeenten geregistreerd in de GWSW-database, ma
 Zie daarvoor ook de overzichten op [apps.gwsw.nl - overzicht datasets](https://apps.gwsw.nl/item_validate_nl)
 
 Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwaliteit. 
-Vanaf medio 2025 is dan ook een gegevens-peiling door de GWSW-applicaties actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
+Vanaf medio 2025 is dan ook een gegevens-peiling op de GWSW Server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
 Die peiling levert een beeld van de gegevenskwaliteit, uitgedrukt in volledigheid en actualiteit.
+
+<div class="box"><pre>
+DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN EN UITSPRAKEN  
+OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
+</pre></div>
 
 De peiling wordt dagelijks bijgewerkt en gepubliceerd via 
 
