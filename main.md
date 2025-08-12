@@ -55,7 +55,7 @@ De peiling wordt dagelijks bijgewerkt en gepubliceerd via
 * [apps.gwsw.nl - status monitor]
 
 Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die gerubriceerd de gemeente-gegevens opvragen.
-* Opvragen gegevens van de putten en bouwwerken
+* Opvragen gegevens van de knooppunten (dat zijn de putten en bouwwerken)
 * Opvragen gegevens van de leidingen
 
 [apps.gwsw.nl - status monitor]: https://apps.gwsw.nl/item_status_monitor
@@ -85,7 +85,7 @@ Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die
 [Drukleiding]: http://data.gwsw.nl/Drukleiding
 
 ### Knooppunten
-Van de putten en bouwwerken  worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
+Van de putten en bouwwerken worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
 * [Rioolput]
 * [Gemaal]
 * [Reservoir]
