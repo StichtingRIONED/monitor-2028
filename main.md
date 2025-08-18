@@ -3,10 +3,10 @@
 <style>
   .symbolSmall{width:20px;height:20px;margin-right:1em;vertical-align:middle}
   .symbol{width:30px;height:30px;margin-right:1em;vertical-align:middle}
-  .kwalGreen{background-color: #44FF70;}
-  .kwalYellow{background-color: #FFC300;}
-  .kwalOrange{background-color: #FF554C;}
-  .kwalPurple{background-color: #7E6DFF;}
+  .green{background-color: #44FF70;width: 20px;}
+  .yellow{background-color: #FFC300;width: 20px;}
+  .orange{background-color: #FF554C;width: 20px;}
+  .purple{background-color: #7E6DFF;width: 20px;}
 </style>
 
 Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project, Arianne Fijan is de verantwoordelijk projectleider. 
@@ -54,8 +54,9 @@ De peiling wordt dagelijks bijgewerkt en gepubliceerd via
 
 * [apps.gwsw.nl - status monitor]
 
-Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die gerubriceerd de gemeente-gegevens opvragen.
-* Opvragen gegevens van de knooppunten (dat zijn de putten en bouwwerken)
+Aan de basis van de gegevens-peiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeente-gegevens opvragen.
+* Opvragen gegevens van de putten
+* Opvragen gegevens van de bouwwerken)
 * Opvragen gegevens van de leidingen
 
 [apps.gwsw.nl - status monitor]: https://apps.gwsw.nl/item_status_monitor
@@ -65,12 +66,13 @@ Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die
 [Drukriolering]: http://data.gwsw.nl/Drukriolering
 
 [Rioolput]: https://data.gwsw.nl/Rioolput
-[Gemaal]: http://data.gwsw.nl/Gemaal
-[Reservoir]: http://data.gwsw.nl/Reservoir
-[Uitlaatconstructie]: http://data.gwsw.nl/Uitlaatconstructie
 [Inspectieput]: http://data.gwsw.nl/Inspectieput
 [Stuwput]: http://data.gwsw.nl/Stuwput
 [Overstortput]: http://data.gwsw.nl/Overstortput
+
+[Gemaal]: http://data.gwsw.nl/Gemaal
+[Reservoir]: http://data.gwsw.nl/Reservoir
+[Uitlaatconstructie]: http://data.gwsw.nl/Uitlaatconstructie
 [Rioolgemaal]: http://data.gwsw.nl/Rioolgemaal
 
 [Mechanische rioolleiding]: http://data.gwsw.nl/MechanischeRioolleiding
@@ -84,14 +86,11 @@ Aan de basis van de gegevens-peiling voor de Monitor 2028 staan twee queries die
 [Goot]: http://data.gwsw.nl/Goot
 [Drukleiding]: http://data.gwsw.nl/Drukleiding
 
-### Knooppunten
-Van de putten en bouwwerken worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
+### Putten
+Van de putten worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
 * [Rioolput]
-* [Gemaal]
-* [Reservoir]
-* [Uitlaatconstructie]
 
-GWSW-subtypen van putten en bouwwerken die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
+GWSW-subtypen van putten die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
 
 Een voorbeeld van het query-resultaat:
 
@@ -101,7 +100,20 @@ Stelsel           | groep      | type           | aantal | jaar
 [Gemengd stelsel] | [Rioolput] | [Inspectieput] | 7      | 1970
 [Gemengd stelsel] | [Rioolput] | [Stuwput]      | 1      | 1970
 [Gemengd stelsel] | [Rioolput] | [Overstortput] | 1      | 1970
-[Gemengd stelsel] | [Gemaal]   | [Rioolgemaal]  | 1      | 1980
+
+### Bouwwerken
+Van de bouwwerken worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
+* [Gemaal]
+* [Reservoir]
+* [Uitlaatconstructie]
+
+GWSW-subtypen van bouwwerken die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
+
+Een voorbeeld van het query-resultaat:
+
+Stelsel           | groep    | type          | aantal | jaar
+------------------|----------|---------------|--------|-----
+[Gemengd stelsel] | [Gemaal] | [Rioolgemaal] | 1      | 1980
 
 ### Leidingen
 Van de leidingen worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
@@ -130,10 +142,13 @@ Stelsel              | groep                          | type            | aantal
 ### Bepaling gegevenskwaliteit
 
 Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven. De kwaliteit wordt uitgedrukt in vier kleuren:
-* <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Gegevens in orde
-* <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Er zijn nog fouten
-* <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Onvoldoende
-* <span class="kwalPurple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Fout in analyse
+
+Kleur                                                      | Kwaliteit
+-----------------------------------------------------------|-------------------
+<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>  | Gegevens in orde
+<span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Er zijn nog fouten
+<span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Onvoldoende
+<span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Fout in analyse
 
 Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - status monitor].
 Die site toontop aanvraag ook de details van de kwaliteitsmeting per gemeente.
@@ -154,26 +169,35 @@ De nu actieve kwaliteitseisen (de globale proefneming):
 
 **Kwaliteitseisen algemeen**  
 
-id          | mess                       | weight | eh | <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-------------|----------------------------|--------|----|---------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------
-actualiteit | Dataset voldoende actueel? | 3      | y  | <1                                                            | <3                                                             | >=3
+id          | mess                       | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
+------------|----------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
+actualiteit | Dataset voldoende actueel? | 3      | y  | <1                              | <3                               | >=3
 
-**Kwaliteitseisen knooppunten (putten en bouwwerken)**  
+**Kwaliteitseisen putten**  
 
-id           | mess                                     | weight | eh | <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
--------------|------------------------------------------|--------|----|---------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------
-aantal       | Verhouding aantal knooppunten / inwoners | 3      | %  | >5 <100                                                       | >0                                                             | =0
-jaar         | Aanlegjaar aanwezig?                     | 1      | %  | >=5                                                           | >0                                                             | =0
-Inspectieput | Inspectieputten aanwezig?                | 1      | %  | >=85                                                          | >=80                                                           | <80
+id           | mess                             | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
+-------------|----------------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
+aantal       | Aantal putten/inwoners           | 3      | %  | >5 <100                         | >0                               | =0
+filter       | Aantal putten/aantal-ongefilterd | 1      | %  | >95                             | >=80                             | <80
+jaar         | Aanlegjaar aanwezig?             | 1      | %  | >=5                             | >0                               | =0
+Inspectieput | Inspectieputten aanwezig?        | 1      | %  | >=85                            | >=80                             | <80
+
+**Kwaliteitseisen bouwwerken**  
+
+id     | mess                                 | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
+-------|--------------------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
+filter | Aantal bouwwerken/aantal-ongefilterd | 1      | %  | >95                             | >=80                             | <80
+jaar   | Aanlegjaar aanwezig?                 | 1      | %  | >=95                            | >=80                             | <80
 
 **Kwaliteitseisen leidingen**  
 
-id                     | mess                                   | weight | eh | <span class="kwalGreen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalYellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span class="kwalOrange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
------------------------|----------------------------------------|--------|----|---------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------
-aantal                 | Verhouding aantal leidingen / inwoners | 3      | %  | >5 <100                                                       | >0                                                             | =0
-jaar                   | Aanlegjaar aanwezig?                   | 1      | %  | >=95                                                          | >=80                                                           | <80
-lengte                 | Gemiddelde leidinglengte               | 1      | m  | >=30                                                          | >=20                                                           | <20
-VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?      | 1      | %  | >=80                                                          | >=70                                                           | <70
+id                     | mess                                | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
+-----------------------|-------------------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
+aantal                 | Aantal leidingen/inwoners           | 3      | %  | >5 <100                         | >0                               | =0
+filter                 | Aantal leidingen/aantal-ongefilterd | 1      | %  | >95                             | >=80                             | <80
+jaar                   | Aanlegjaar aanwezig?                | 1      | %  | >=95                            | >=80                             | <80
+lengte                 | Gemiddelde leidinglengte            | 1      | m  | >=30                            | >=20                             | <20
+VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 1      | %  | >=80                            | >=70                             | <70
 
 **Kwaliteit per gemeente/dataset**
 
