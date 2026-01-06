@@ -56,7 +56,7 @@ De peiling wordt dagelijks bijgewerkt en gepubliceerd via
 
 Aan de basis van de gegevens-peiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeente-gegevens opvragen.
 * Opvragen gegevens van de putten
-* Opvragen gegevens van de bouwwerken)
+* Opvragen gegevens van de bouwwerken
 * Opvragen gegevens van de leidingen
 
 [apps.gwsw.nl - status monitor]: https://apps.gwsw.nl/item_status_monitor
@@ -159,7 +159,7 @@ OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
 </b></mark>
 
 <mark><b>
-DE KWALITEITSEISEN WORDEN NOG VASTGEGSTELD, NET ZOALS DE FORMULES OM TE KOMEN TOT  
+DE KWALITEITSEISEN WORDEN NOG VASTGESTELD, NET ZOALS DE FORMULES OM TE KOMEN TOT  
 EEN ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI.
 </b></mark>
 
@@ -172,6 +172,7 @@ De nu actieve kwaliteitseisen (de globale proefneming):
 id          | mess                       | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
 ------------|----------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
 actualiteit | Dataset voldoende actueel? | 3      | y  | <1                              | <3                               | >=3
+validatie   | Validatie dataset-upload   | 3      | aantal fouten | <1                              | <6                               | >=6
 
 **Kwaliteitseisen putten**  
 
