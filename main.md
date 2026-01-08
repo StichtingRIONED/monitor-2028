@@ -151,7 +151,7 @@ Kleur                                                      | Kwaliteit
 <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Fout in analyse
 
 Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - status monitor].
-Die site toontop aanvraag ook de details van de kwaliteitsmeting per gemeente.
+Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente.
 
 <mark><b>
 DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN WORDEN NOG VASTGESTELD
