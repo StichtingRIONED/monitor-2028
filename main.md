@@ -154,8 +154,7 @@ Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en pre
 Die site toontop aanvraag ook de details van de kwaliteitsmeting per gemeente.
 
 <mark><b>
-DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN WORDEN NOG VASTGESTELD, 
-NET ZOALS DE FORMULES OM TE KOMEN TOT EEN ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI.
+DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN WORDEN NOG VASTGESTELD
 </b></mark>
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
@@ -198,4 +197,20 @@ VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 1      | %  | >=8
 **Kwaliteit per gemeente/dataset**
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
-De formule daarvoor is ...
+
+De formule daarvoor is: 
+
+<mark><b>
+DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI WORDT NOG UITGEWERKT
+</b></mark>
+
+* atPaars = (aantal * gewicht) kwaliteiten Paars
+* atRood = (aantal * gewicht) kwaliteiten Rood
+* atOranje = (aantal * gewicht) kwaliteiten Oranje
+* at = (aantal) kwaliteiten Paars + Rood + Oranje + Groen
+
+* Als **atPaars / at > 0.01**: Dataset-kwaliteit = <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+* Als **(atPaars + atRood) / at > 0.2**: Dataset-kwaliteit = <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+* Als **(atPaars + atRood + atOranje) / at > 0.3**: Dataset-kwaliteit = <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+* Overig: Dataset-kwaliteit = <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
