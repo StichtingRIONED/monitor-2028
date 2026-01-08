@@ -209,6 +209,7 @@ DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI WORDT NOG UITGEWE
 * atOranje = (aantal * gewicht) kwaliteiten Oranje
 * at = aantal kwaliteiten Paars + Rood + Oranje + Groen  
 
+
 * Als **atPaars / at > 0.01**: Dataset-kwaliteit = <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 * Als **(atPaars + atRood) / at > 0.2**: Dataset-kwaliteit = <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 * Als **(atPaars + atRood + atOranje) / at > 0.3**: Dataset-kwaliteit = <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
