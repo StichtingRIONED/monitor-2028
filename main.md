@@ -154,13 +154,8 @@ Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en pre
 Die site toontop aanvraag ook de details van de kwaliteitsmeting per gemeente.
 
 <mark><b>
-DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN EN UITSPRAKEN  
-OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
-</b></mark>
-
-<mark><b>
-DE KWALITEITSEISEN WORDEN NOG VASTGESTELD, NET ZOALS DE FORMULES OM TE KOMEN TOT  
-EEN ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI.
+DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN WORDEN NOG VASTGESTELD, 
+NET ZOALS DE FORMULES OM TE KOMEN TOT EEN ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI.
 </b></mark>
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
@@ -169,9 +164,9 @@ De nu actieve kwaliteitseisen (de globale proefneming):
 
 **Kwaliteitseisen algemeen**  
 
-id          | mess                       | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
-------------|----------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
-actualiteit | Dataset voldoende actueel? | 3      | y  | <1                              | <3                               | >=3
+id          | mess                       | weight | eh            | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
+------------|----------------------------|--------|---------------|---------------------------------|----------------------------------|---------------------------------
+actualiteit | Dataset voldoende actueel? | 3      | y             | <1                              | <3                               | >=3
 validatie   | Validatie dataset-upload   | 3      | aantal fouten | <1                              | <6                               | >=6
 
 **Kwaliteitseisen putten**  
