@@ -9,8 +9,8 @@
   .purple{background-color: #7E6DFF;width: 20px;}
 </style>
 
-Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project, Arianne Fijan is de verantwoordelijk projectleider. 
-Vragen over deze website en de Monitor 2028 kunt u stellen via arianne.fijan@rioned.org. 
+Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project. Arianne Fijan is de verantwoordelijk projectleider. 
+Vragen over deze website en de Monitor Gemeentelijke Watertaken 2028 kunt u stellen via arianne.fijan@rioned.org. 
 
 # Inleiding
 
@@ -32,9 +32,9 @@ Vragen over deze website en de Monitor 2028 kunt u stellen via arianne.fijan@rio
 
 ## Gebruik van het GWSW
 
-Het GWSW is het uitgelezen middel voor het uitvoeren van een gegevens-peiling voor de Monitor 2028. 
+De GWSW-standaard en het bijbehorende dataplatform en applicaties is het uitgelezen middel voor het faciliteren van de gegevensverzameling voor de Monitor Gemeentelijke Watertaken 2028. Doel is zoveel mogelijk gegevens  over rioleringsobjecten (aantallen, lengtes, kenmerken) vanuit het GWSW-dataplatform te ontsluiten voor de analyses ten behoeve van de Monitor 2028.
 
-Het GWSW is een open (linked-data) platform en gemeenten leveren periodiek hun gegevens aan op de GWSW Server.
+Het GWSW is een open (linked-data) platform en gemeenten leveren periodiek hun gegevens aan op de GWSW-server.
 Deze gegevens zijn met allerlei toepassingen en met zogenaamde queries (geformatteerde vragen) te gebruiken.
 
 Op dit moment is ruim 67% van de gemeenten geregistreerd in de GWSW-database, maar er valt nog veel werk te verzetten om de kwaliteit van de aangeleverde gegevens op peil te brengen.  
@@ -42,7 +42,7 @@ Op dit moment is ruim 67% van de gemeenten geregistreerd in de GWSW-database, ma
 Zie daarvoor ook de overzichten op [apps.gwsw.nl - overzicht datasets](https://apps.gwsw.nl/item_validate_nl)
 
 Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwaliteit. 
-Vanaf medio 2025 is dan ook een gegevens-peiling op de GWSW Server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
+Vanaf medio 2025 is een gegevenspeiling op de GWSW-server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
 Die peiling levert een beeld van de gegevenskwaliteit, uitgedrukt in volledigheid en actualiteit.
 
 <mark><b>
@@ -54,10 +54,10 @@ De peiling wordt dagelijks bijgewerkt en gepubliceerd via
 
 * [apps.gwsw.nl - status monitor]
 
-Aan de basis van de gegevens-peiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeente-gegevens opvragen.
-* Opvragen gegevens van de putten
+Aan de basis van de gegevenspeiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeentelijke objectgegevens opvragen.
+* Opvragen gegevens van de rioolputten
 * Opvragen gegevens van de bouwwerken
-* Opvragen gegevens van de leidingen
+* Opvragen gegevens van de rioolleidingen
 
 [apps.gwsw.nl - status monitor]: https://apps.gwsw.nl/item_status_monitor
 
@@ -219,4 +219,5 @@ DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI WORDT NOG UITGEWE
 * Als **(atPaars + atRood) / at > 0.2**: Dataset-kwaliteit = <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 * Als **(atPaars + atRood + atOranje) / at > 0.3**: Dataset-kwaliteit = <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 * Overig: Dataset-kwaliteit = <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
 
