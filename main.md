@@ -194,7 +194,12 @@ jaar                   | Aanlegjaar aanwezig?                | 1      | %  | >=9
 lengte                 | Gemiddelde leidinglengte            | 1      | m  | >=30                            | >=20                             | <20
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 1      | %  | >=80                            | >=70                             | <70
 
-**Kwaliteit per gemeente/dataset**
+**Optionele kwaliteitseisen (nog niet operationeel)**  
+
+* Past het objecttype bij het stelseltype?
+* ...
+
+### Algemene kwaliteit per gemeente
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
 
