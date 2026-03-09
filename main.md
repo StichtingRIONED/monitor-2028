@@ -154,7 +154,7 @@ Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en pre
 Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente.
 
 <mark><b>
-DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN WORDEN NOG VASTGESTELD
+DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL - DE KWALITEITSEISEN WORDEN NOG VASTGESTELD
 </b></mark>
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
@@ -194,7 +194,9 @@ jaar                   | Aanlegjaar aanwezig?                | 1      | %  | >=9
 lengte                 | Gemiddelde leidinglengte            | 1      | m  | >=30                            | >=20                             | <20
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 1      | %  | >=80                            | >=70                             | <70
 
-**Optionele kwaliteitseisen (nog niet operationeel)**  
+
+
+<mark><b>Optionele kwaliteitseisen (nog niet operationeel)</b></mark>
 
 * Past het objecttype bij het stelseltype?
 * ...
@@ -206,7 +208,7 @@ De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kw
 De formule daarvoor is: 
 
 <mark><b>
-DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI WORDT NOG UITGEWERKT
+DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEIT IS GEFANTASEERD - WORDT NOG UITGEWERKT
 </b></mark>
 
 * atPaars = (aantal * gewicht) kwaliteiten Paars
