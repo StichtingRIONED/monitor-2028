@@ -216,8 +216,8 @@ DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEI WORDT NOG UITGEWE
 
 
 * Als **atPaars / at > 0.01**: Dataset-kwaliteit = <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-* Als **(atPaars + atRood) / at > 0.2**: Dataset-kwaliteit = <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-* Als **(atPaars + atRood + atOranje) / at > 0.3**: Dataset-kwaliteit = <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+* Of als **(atPaars + atRood) / at > 0.2**: Dataset-kwaliteit = <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+* Of als **(atPaars + atRood + atOranje) / at > 0.3**: Dataset-kwaliteit = <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 * Overig: Dataset-kwaliteit = <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
