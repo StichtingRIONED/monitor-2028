@@ -25,9 +25,9 @@ var respecConfig =
     companyURL: "https://www.riool.net"
     },{
     name: "Marinus Vonhof",
-    url: "mailto:marinus.vonhof@marIvon.nl",
-    company: "marIvon",
-    companyURL: "https://www.marIvon.nl"
+    url: "mailto:marinus.vonhof@marvoni.nl",
+    company: "marvoni",
+    companyURL: "https://www.marvoni.nl"
   }],
   otherLinks: [{
     key: "GitHub", href: "https://github.com/stichtingrioned/monitor-2028/"

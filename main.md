@@ -3,10 +3,12 @@
 <style>
   .symbolSmall{width:20px;height:20px;margin-right:1em;vertical-align:middle}
   .symbol{width:30px;height:30px;margin-right:1em;vertical-align:middle}
-  .green{background-color: #44FF70;width: 20px;}
-  .yellow{background-color: #FFC300;width: 20px;}
-  .orange{background-color: #FF554C;width: 20px;}
-  .purple{background-color: #7E6DFF;width: 20px;}
+  .green{background-color: #00FF37;width: 20px;}
+  .green_1{background-color: #6BFF97;width: 20px;}
+  .green_2{background-color: #99FFB7;width: 20px;}
+  .green_3{background-color: #C9FFD6;width: 20px;}
+  .green_4{background-color: #DDFFE7;width: 20px;}
+  .grey{background-color: #E2E2E2;width: 20px;}
 </style>
 
 Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project. Arianne Fijan is de verantwoordelijk projectleider. 
@@ -39,27 +41,27 @@ Deze gegevens zijn met allerlei toepassingen en met zogenaamde queries (geformat
 
 Op dit moment is ruim 67% van de gemeenten geregistreerd in de GWSW-database, maar er valt nog veel werk te verzetten om de kwaliteit van de aangeleverde gegevens op peil te brengen.  
 
-Zie daarvoor ook de overzichten op [apps.gwsw.nl - overzicht datasets](https://apps.gwsw.nl/item_validate_nl)
+Zie daarvoor ook de overzichten op [apps.gwsw.nl](https://apps.gwsw.nl)
 
 Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwaliteit. 
 Vanaf medio 2025 is een gegevenspeiling op de GWSW-server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
 Die peiling levert een beeld van de gegevenskwaliteit, uitgedrukt in volledigheid en actualiteit.
 
-<mark><b>
-DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL MAAR DE KWALITEITSEISEN EN UITSPRAKEN  
-OVER DE KWALITEIT ZIJN NOG NIET REALISTISCH.
-</b></mark>
+<mark>
+De kwaliteitmeting is operationeel, maar op dit moment is de uitspraak over het algemene kwaliteitsniveau van datasets nog gebaseerd op enkele basis-kwaliteitseisen.
+In de loop der tijd wordt de meting van het algemene kwaliteitsniveau aangescherpt, dan worden meer kwaliteitseisen meegenomen.
+</mark>
 
 De peiling wordt dagelijks bijgewerkt en gepubliceerd via 
 
-* [apps.gwsw.nl - status monitor]
+* [apps.gwsw.nl - monitor]
 
 Aan de basis van de gegevenspeiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeentelijke objectgegevens opvragen.
 * Opvragen gegevens van de rioolputten
 * Opvragen gegevens van de bouwwerken
 * Opvragen gegevens van de rioolleidingen
 
-[apps.gwsw.nl - status monitor]: https://apps.gwsw.nl/item_status_monitor
+[apps.gwsw.nl - monitor]: https://apps.gwsw.nl/item_monitor
 
 [Gemengd stelsel]: http://data.gwsw.nl/GemengdStelsel
 [Persleidingstelsel]: http://data.gwsw.nl/Persleidingsysteem
@@ -143,57 +145,50 @@ Stelsel              | groep                          | type            | aantal
 
 Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven. De kwaliteit wordt uitgedrukt in vier kleuren:
 
-Kleur                                                      | Kwaliteit
------------------------------------------------------------|-------------------
-<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>  | Gegevens in orde
-<span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Er zijn nog fouten
-<span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Onvoldoende
-<span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Fout in analyse
+Kleur                                                       | Kwaliteit
+------------------------------------------------------------|----------------------
+<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>   | Gegevens in orde
+<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Er zijn nog fouten
+<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Nog niet voldoende
+<span class="grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    | Dataset niet leesbaar
 
-Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - status monitor].
+Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - monitor].
 Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente.
-
-<mark><b>
-DE KWALITEITSMETING IS IN CONCEPT OPERATIONEEL - DE KWALITEITSEISEN WORDEN NOG VASTGESTELD
-</b></mark>
 
 Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
 
-De nu actieve kwaliteitseisen (de globale proefneming):
-
 **Kwaliteitseisen algemeen**  
 
-id          | mess                       | weight | eh            | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
-------------|----------------------------|--------|---------------|---------------------------------|----------------------------------|---------------------------------
-actualiteit | Dataset voldoende actueel? | 3      | y             | <1                              | <3                               | >=3
-validatie   | Validatie dataset-upload   | 3      | aantal fouten | <1                              | <6                               | >=6
+id          | melding                    | gewicht | eh            | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+------------|----------------------------|---------|---------------|---------------------------------|-----------------------------------|----------------------------------
+actualiteit | Dataset voldoende actueel? | 1       | y             | <1                              | <3                                | >=3
+validatie   | Validatie dataset-upload   | 3       | aantal fouten | <1                              | <6                                | >=6
 
 **Kwaliteitseisen putten**  
 
-id           | mess                             | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
--------------|----------------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
-aantal       | Aantal putten/inwoners           | 3      | %  | >5 <100                         | >0                               | =0
-filter       | Aantal putten/aantal-ongefilterd | 1      | %  | >95                             | >=80                             | <80
-jaar         | Aanlegjaar aanwezig?             | 1      | %  | >=5                             | >0                               | =0
-Inspectieput | Inspectieputten aanwezig?        | 1      | %  | >=85                            | >=80                             | <80
+id           | melding                          | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+-------------|----------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
+aantal       | Aantal putten/inwoners           | 3       | %  | >5 <100                         | >0                                | =0
+filter       | Aantal putten/aantal-ongefilterd | 0       | %  | >95                             | >=80                              | <80
+jaar         | Aanlegjaar aanwezig?             | 0       | %  | >=5                             | >0                                | =0
+Inspectieput | Inspectieputten aanwezig?        | 0       | %  | >=85                            | >=80                              | <80
 
 **Kwaliteitseisen bouwwerken**  
 
-id     | mess                                 | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
--------|--------------------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
-filter | Aantal bouwwerken/aantal-ongefilterd | 1      | %  | >95                             | >=80                             | <80
-jaar   | Aanlegjaar aanwezig?                 | 1      | %  | >=95                            | >=80                             | <80
+id     | melding                              | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+-------|--------------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
+filter | Aantal bouwwerken/aantal-ongefilterd | 0       | %  | >95                             | >=80                              | <80
+jaar   | Aanlegjaar aanwezig?                 | 0       | %  | >=95                            | >=80                              | <80
 
 **Kwaliteitseisen leidingen**  
 
-id                     | mess                                | weight | eh | <div class="green">&nbsp;</div> | <div class="yellow">&nbsp;</div> | <div class="orange">&nbsp;</div>
------------------------|-------------------------------------|--------|----|---------------------------------|----------------------------------|---------------------------------
-aantal                 | Aantal leidingen/inwoners           | 3      | %  | >5 <100                         | >0                               | =0
-filter                 | Aantal leidingen/aantal-ongefilterd | 1      | %  | >95                             | >=80                             | <80
-jaar                   | Aanlegjaar aanwezig?                | 1      | %  | >=95                            | >=80                             | <80
-lengte                 | Gemiddelde leidinglengte            | 1      | m  | >=30                            | >=20                             | <20
-VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 1      | %  | >=80                            | >=70                             | <70
-
+id                     | melding                             | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+-----------------------|-------------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
+aantal                 | Aantal leidingen/inwoners           | 3       | %  | >5 <100                         | >0                                | =0
+filter                 | Aantal leidingen/aantal-ongefilterd | 0       | %  | >95                             | >=80                              | <80
+jaar                   | Aanlegjaar aanwezig?                | 0       | %  | >=95                            | >=80                              | <80
+lengte                 | Gemiddelde leidinglengte            | 0       | m  | >=30                            | >=20                              | <20
+VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=80                            | >=70                              | <70
 
 
 <mark><b>Optionele kwaliteitseisen (nog niet operationeel)</b></mark>
@@ -205,21 +200,24 @@ VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 1      | %  | >=8
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
 
-De formule daarvoor is: 
+**Stapsgewijze aanscherping gewenste kwaliteitniveau**  
 
-<mark><b>
-DE FORMULE VOOR DE ALGEMENE UITSPRAAK OVER DE DATASET-KWALITEIT IS GEFANTASEERD - WORDT NOG UITGEWERKT
-</b></mark>
+Het is de bedoeling de kwaliteitsmeting in de komende jaren geleidelijk aan te scherpen.
+De op dit moment gebruikte kwaliteitseisen voor bepaling van de algemene kwaliteit per gemeente hebben een **gewicht groter dan 0** in het overzicht hiervoor.
 
-* atPaars = (aantal * gewicht) kwaliteiten Paars
-* atRood = (aantal * gewicht) kwaliteiten Rood
-* atOranje = (aantal * gewicht) kwaliteiten Oranje
-* at = aantal kwaliteiten Paars + Rood + Oranje + Groen  
+Op dit moment (vanaf 1 mei 2026) worden alleen enkele basiskwaliteiten gemeten.
 
+De algemene dataset-kwaliteit wordt uitgedruikt in vijf groenwaarden: 
+<span class="green_4">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green">&nbsp;&nbsp;&nbsp;</span>
 
-* Als **atPaars / at > 0.01**: Dataset-kwaliteit = <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-* Of als **(atPaars + atRood) / at > 0.2**: Dataset-kwaliteit = <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-* Of als **(atPaars + atRood + atOranje) / at > 0.3**: Dataset-kwaliteit = <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-* Overig: Dataset-kwaliteit = <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+Het algemene kwaliteitniveau is gebaseerd op het gemiddelde van de niveaus per kwaliteitseis, rekening houden met het gewicht per kwaliteiteis.
 
+* atGroen = (aantal * gewicht) kwaliteiten Groen <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* atGroen_2 = (aantal * gewicht) kwaliteiten Groen_2 <span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* atGroen_4 = (aantal * gewicht) kwaliteiten Groen_4 <span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at = aantal kwaliteiten atGroen + atGroen_2 + atGroen_4  
+
+* avg = gemiddelde waarde (tussen 0 en 2) = ((atGroen_4 * 0) + (atGroen_2 * 1) + (atGroen * 2)) / at
+* de algemene kwaliteit (van laag naar hoog in 5 niveaus) = (avg / 2) * 4 (afgerond naar een integer tussen 0 en 4) 
+<span class="green_4">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green">&nbsp;&nbsp;&nbsp;</span>
 
