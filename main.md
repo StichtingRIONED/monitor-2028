@@ -210,9 +210,9 @@ Voor de algemene dataset-kwaliteit hanteren we vijf niveaus/groenwaarden (van ho
 
 Het algemene kwaliteitniveau is gebaseerd op het gemiddelde van de niveaus per kwaliteitseis, rekening houden met het gewicht per kwaliteiteis.
 
-* at_1 = kwaliteiten Niveau_1 = (aantal * gewicht)  &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* at_2 = kwaliteiten Niveau_2 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* at_3 = kwaliteiten Niveau_3 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_1 = kwaliteiten niveau 1 = (aantal * gewicht) &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_2 = kwaliteiten niveau 2 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_3 = kwaliteiten niveau 3 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 * avg = gemiddelde waarde (van hoog naar laag, tussen 0 en 2) = ((at_1 * 0) + (at_2 * 1) + (at_3 * 2)) / (at_1 + at_2 + at_3)
 * Algemene kwaliteitniveau = 1 + (avg / 2) * 4
 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
