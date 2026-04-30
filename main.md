@@ -143,19 +143,17 @@ Stelsel              | groep                          | type            | aantal
 
 ### Bepaling gegevenskwaliteit
 
-Met GWSW-Apps wordt een indicatie van de gegevenskwaliteit per gemeente gegeven. De kwaliteit wordt uitgedrukt in vier kleuren:
-
-Kleur                                                       | Kwaliteit
-------------------------------------------------------------|----------------------
-<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>   | Gegevens in orde
-<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Er zijn nog fouten
-<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Nog niet voldoende
-<span class="grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    | Dataset niet leesbaar
-
 Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - monitor].
-Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente.
+Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente. 
+Voor deze meting zijn een aantal kwaliteitseisen geformuleerd. Het kwaliteitsniveau per kwaliteitseis wordt uitgedrukt in drie kleuren:
 
-Voor de bepaling van de kwaliteit worden de query-resultaten getoetst aan een serie kwaliteitseisen.
+Niveau | Kleur                                                       | Kwaliteit
+-------|-------------------------------------------------------------|-------------------
+1      | <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>   | Hoog
+2      | <span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Gemiddeld
+3      | <span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Laag
+
+De gemeentelijke gegevens worden getoetst aan de volgende kwaliteitseisen:
 
 **Kwaliteitseisen algemeen**  
 
@@ -207,17 +205,15 @@ De op dit moment gebruikte kwaliteitseisen voor bepaling van de algemene kwalite
 
 Op dit moment (vanaf 1 mei 2026) worden alleen enkele basiskwaliteiten gemeten.
 
-De algemene dataset-kwaliteit wordt uitgedruikt in vijf groenwaarden: 
-<span class="green_4">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green">&nbsp;&nbsp;&nbsp;</span>
+Voor de algemene dataset-kwaliteit hanteren we vijf niveaus/groenwaarden (van hoog naar laag): 
+&nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
 
 Het algemene kwaliteitniveau is gebaseerd op het gemiddelde van de niveaus per kwaliteitseis, rekening houden met het gewicht per kwaliteiteis.
 
-* atGroen = (aantal * gewicht) kwaliteiten Groen <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* atGroen_2 = (aantal * gewicht) kwaliteiten Groen_2 <span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* atGroen_4 = (aantal * gewicht) kwaliteiten Groen_4 <span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* at = aantal kwaliteiten atGroen + atGroen_2 + atGroen_4  
-
-* avg = gemiddelde waarde (tussen 0 en 2) = ((atGroen_4 * 0) + (atGroen_2 * 1) + (atGroen * 2)) / at
-* de algemene kwaliteit (van laag naar hoog in 5 niveaus) = (avg / 2) * 4 (afgerond naar een integer tussen 0 en 4) 
-<span class="green_4">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green">&nbsp;&nbsp;&nbsp;</span>
+* at_1 = kwaliteiten Niveau_1 = (aantal * gewicht)  &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_2 = kwaliteiten Niveau_2 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_3 = kwaliteiten Niveau_3 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* avg = gemiddelde waarde (van hoog naar laag, tussen 0 en 2) = ((at_1 * 0) + (at_2 * 1) + (at_3 * 2)) / (at_1 + at_2 + at_3)
+* Algemene kwaliteitniveau = 1 + (avg / 2) * 4
+&nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
 
