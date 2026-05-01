@@ -143,9 +143,9 @@ Stelsel              | groep                          | type            | aantal
 
 ### Bepaling gegevenskwaliteit
 
-Zoals gezegd meet GWSW Apps dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - monitor].
+GWSW Apps meet dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - monitor].
 Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente. 
-Voor deze meting zijn een aantal kwaliteitseisen geformuleerd. Het kwaliteitsniveau per kwaliteitseis wordt uitgedrukt in drie kleuren:
+Voor de meting zijn een aantal kwaliteitseisen geformuleerd. Het bereikte kwaliteitsniveau per kwaliteitseis wordt uitgedrukt in drie kleuren:
 
 Niveau | Kleur                                                       | Kwaliteit
 -------|-------------------------------------------------------------|-------------------
@@ -159,7 +159,7 @@ De gemeentelijke gegevens worden getoetst aan de volgende kwaliteitseisen:
 
 id          | melding                    | gewicht | eh            | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 ------------|----------------------------|---------|---------------|---------------------------------|-----------------------------------|----------------------------------
-actualiteit | Dataset voldoende actueel? | 1       | y             | <1                              | <3                                | >=3
+actualiteit | Dataset voldoende actueel? | 1       | jaar             | <1                              | <3                                | >=3
 validatie   | Validatie dataset-upload   | 3       | aantal fouten | <1                              | <6                                | >=6
 
 **Kwaliteitseisen putten**  
@@ -189,7 +189,7 @@ lengte                 | Gemiddelde leidinglengte            | 0       | m  | >=
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=80                            | >=70                              | <70
 
 
-<mark><b>Optionele kwaliteitseisen (nog niet operationeel)</b></mark>
+<mark><b>Optionele kwaliteitseisen (nog uitwerken)</b></mark>
 
 * Past het objecttype bij het stelseltype?
 * ...
@@ -210,10 +210,10 @@ Voor de algemene dataset-kwaliteit hanteren we vijf niveaus/groenwaarden (van ho
 
 Het algemene kwaliteitniveau is gebaseerd op het gemiddelde van de niveaus per kwaliteitseis, rekening houden met het gewicht per kwaliteiteis.
 
-* at_1 = kwaliteiten niveau 1 = (aantal * gewicht) &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* at_2 = kwaliteiten niveau 2 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* at_3 = kwaliteiten niveau 3 = (aantal * gewicht) &nbsp;&nbsp;<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* avg = gemiddelde waarde (van hoog naar laag, tussen 0 en 2) = ((at_1 * 0) + (at_2 * 1) + (at_3 * 2)) / (at_1 + at_2 + at_3)
-* Algemene kwaliteitniveau = 1 + (avg / 2) * 4
+* at_1 = sommatie gewicht van kwaliteitseisen met niveau 1 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_2 = sommatie gewicht van kwaliteitseisen met niveau 2 &nbsp;&nbsp;<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* at_3 = sommatie gewicht van kwaliteitseisen met niveau 3 &nbsp;&nbsp;<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* avg = gemiddelde waarde van hoog (=0) naar laag (=2) = ((at_1 * 0) + (at_2 * 1) + (at_3 * 2)) / (at_1 + at_2 + at_3)
+* Algemene kwaliteitniveau van hoog (=0) naar laag (=4) = (avg / 2) * 4
 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
 

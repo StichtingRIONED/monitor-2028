@@ -12,30 +12,26 @@
 
 <body>
   <script src="./reload.js" class="remove"></script> <!-- bouwfase (20230522) -->
-  <!-- section data-format="markdown" data-include="bp-gwsw.md"</section-->
 
-  <!-- section data-format="markdown" data-include="bp-gwsw.md" --></section>
-
-  <div class="informative" id="abstract">
+  <!-- Gebruik altijd het closing element (</section></a>) voor een correcte werking van Respect -->
+  
+  <section id="abstract"> <!-- id="abstract" = samenvatting -->
     <p>
       De Monitor-2028 doet een peiling van de Stedelijk Water voorzieningen in de Nederlandse gemeenten.
     </p>
     <p>
       Deze website behandelt de opzet van de monitor en het gebruik van het GWSW voor de peiling.
     </p>
-  </div>
-  <div id="logo">
-    <a href="https://www.riool.net" style="margin-top:2em;"><img class="logo" src="media/RIONED_logo2.gif"
-        alt="RIONED Logo"></a>
-  </div>
+    <a href="https://www.riool.net"><img class="logo" src="media/RIONED_logo2.gif" alt="RIONED Logo"></a>
+  </section>
+  
+  <section data-format="markdown" data-include="main.md"></section>
 
-  <!-- toevoegen voor tekst "niet normatief" bovenaan de sectie -->
-  <section data-format="markdown" data-include="main.md" ></section> <!-- closing element is noodzakelijk (anders ontbreekt de volgende sectie) --> 
-
-  <!-- This section is filled automatically by ReSpec. -->
-  <!-- meldt "alles in dit document is normatief" (verberg optioneel) -->
-  <section id="conformance"></section> 
-
+  <!-- 
+    id="conformance": meldt "alles in dit document is normatief"
+    Maak zichtbaar indien de site-tekst normatief is
+    Gebruik dan in sections die niet normatief zijn class="informative" (voor tekst "dit onderdeel is niet normatief" bovenaan in de sectie)  
+  <section id="conformance"></section> -->
 </body>
 
 </html>
