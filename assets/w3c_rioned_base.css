@@ -518,7 +518,7 @@
     border: none;
     box-shadow: 3px 3px rgba(75%, 75%, 75%, .25);
     padding: 1em;
-    margin-top: 1em;
+    margin: 1em 3em 0 1em;
   }
 
 /******************************************************************************/

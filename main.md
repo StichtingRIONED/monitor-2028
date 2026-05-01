@@ -47,10 +47,10 @@ Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwali
 Vanaf medio 2025 is een gegevenspeiling op de GWSW-server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
 Die peiling levert een beeld van de gegevenskwaliteit, uitgedrukt in volledigheid en actualiteit.
 
-<mark>
+<div class="box">
 De kwaliteitmeting is operationeel, maar op dit moment is de uitspraak over het algemene kwaliteitsniveau van datasets nog gebaseerd op enkele basis-kwaliteitseisen.
 In de loop der tijd wordt de meting van het algemene kwaliteitsniveau aangescherpt, dan worden meer kwaliteitseisen meegenomen.
-</mark>
+</div>
 
 De peiling wordt dagelijks bijgewerkt en gepubliceerd via 
 
@@ -198,10 +198,11 @@ VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
 
-**Stapsgewijze aanscherping gewenste kwaliteitniveau**  
-
+<div class="box">
+<i>Stapsgewijze aanscherping gewenste kwaliteitniveau</i><br/><br/>
 Het is de bedoeling de kwaliteitsmeting in de komende jaren geleidelijk aan te scherpen.
 De op dit moment gebruikte kwaliteitseisen voor bepaling van de algemene kwaliteit per gemeente hebben een **gewicht groter dan 0** in het overzicht hiervoor.
+</div>
 
 Op dit moment (vanaf 1 mei 2026) worden alleen enkele basiskwaliteiten gemeten.
 
@@ -213,7 +214,8 @@ Het algemene kwaliteitniveau is gebaseerd op het gemiddelde van de niveaus per k
 * at_1 = sommatie gewicht van kwaliteitseisen met niveau 1 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 * at_2 = sommatie gewicht van kwaliteitseisen met niveau 2 &nbsp;&nbsp;<span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 * at_3 = sommatie gewicht van kwaliteitseisen met niveau 3 &nbsp;&nbsp;<span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-* avg = gemiddelde waarde van hoog (=0) naar laag (=2) = ((at_1 * 0) + (at_2 * 1) + (at_3 * 2)) / (at_1 + at_2 + at_3)
-* Algemene kwaliteitniveau van hoog (=0) naar laag (=4) = (avg / 2) * 4
+* avg = gemiddelde waarde tussen hoog (=0) en laag (=2) = ((at_1 * 0) + (at_2 * 1) + (at_3 * 2)) / (at_1 + at_2 + at_3)
+
+Algemene kwaliteitniveau van hoog (=0) naar laag (=4) = (avg / 2) * 4
 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
 
