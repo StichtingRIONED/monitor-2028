@@ -189,10 +189,11 @@ lengte                 | Gemiddelde leidinglengte            | 0       | m  | >=
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=80                            | >=70                              | <70
 
 
-<mark><b>Optionele kwaliteitseisen (nog uitwerken)</b></mark>
+<mark><b>Optionele kwaliteitseisen (verder uitwerken)</b></mark>
 
 * Past het objecttype bij het stelseltype?
-* ...
+* Is het objecttype concreet genoeg? Objecten binnen GWSW-filter analyseren, kunnen te abstract zijn. Toetsing op aantal-ongefilterd kan dan vervallen.
+* Upload-validatie verder verfijnen: wordt GGN Monitor
 
 ### Algemene kwaliteit per gemeente
 
