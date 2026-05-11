@@ -1,12 +1,12 @@
 # Monitor 2028
 
-<style>
+<style> <!-- Kwaliteit datasets [sync] met SLD Geoserver, gwsw-apps -->
   .symbolSmall{width:20px;height:20px;margin-right:1em;vertical-align:middle}
   .symbol{width:30px;height:30px;margin-right:1em;vertical-align:middle}
   .green{background-color: #00FF37;width: 20px;}
-  .green_1{background-color: #6BFF97;width: 20px;}
-  .green_2{background-color: #99FFB7;width: 20px;}
-  .green_3{background-color: #C9FFD6;width: 20px;}
+  .green_1{background-color: #9DFF00;width: 20px;}
+  .green_2{background-color: #CFFF7C;width: 20px;}
+  .green_3{background-color: #DAFFBF;width: 20px;}
   .green_4{background-color: #DDFFE7;width: 20px;}
   .grey{background-color: #E2E2E2;width: 20px;}
 </style>
