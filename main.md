@@ -41,7 +41,7 @@ Deze gegevens zijn met allerlei toepassingen en met zogenaamde queries (geformat
 
 Op dit moment is ruim 67% van de gemeenten geregistreerd in de GWSW-database, maar er valt nog veel werk te verzetten om de kwaliteit van de aangeleverde gegevens op peil te brengen.  
 
-Zie daarvoor ook de overzichten op [apps.gwsw.nl](https://apps.gwsw.nl)
+Zie daarvoor ook de overzichten op [apps.gwsw.nl]
 
 Om de gegevenskwaliteit te verbeteren is allereerst inzicht nodig over die kwaliteit. 
 Vanaf medio 2025 is een gegevenspeiling op de GWSW-server actief, daarmee kunnen gemeenten (en Stichting RIONED) de stand van zaken opvragen.
@@ -61,6 +61,7 @@ Aan de basis van de gegevenspeiling voor de Monitor 2028 staan drie queries die 
 * Opvragen gegevens van de bouwwerken
 * Opvragen gegevens van de rioolleidingen
 
+[apps.gwsw.nl]: https://apps.gwsw.nl
 [apps.gwsw.nl - monitor]: https://apps.gwsw.nl/item_monitor
 
 [Gemengd stelsel]: http://data.gwsw.nl/GemengdStelsel
@@ -148,7 +149,7 @@ Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente.
 Voor de meting zijn een aantal kwaliteitseisen geformuleerd. Het bereikte kwaliteitsniveau per kwaliteitseis wordt uitgedrukt in drie kleuren:
 
 Niveau | Kleur                                                       | Kwaliteit
--------|-------------------------------------------------------------|-------------------
+-------|-------------------------------------------------------------|----------
 1      | <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>   | Hoog
 2      | <span class="green_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Gemiddeld
 3      | <span class="green_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Laag
@@ -159,7 +160,7 @@ De gemeentelijke gegevens worden getoetst aan de volgende kwaliteitseisen:
 
 id          | melding                    | gewicht | eh            | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 ------------|----------------------------|---------|---------------|---------------------------------|-----------------------------------|----------------------------------
-actualiteit | Dataset voldoende actueel? | 1       | jaar             | <1                              | <3                                | >=3
+actualiteit | Dataset voldoende actueel? | 1       | jaar          | <1                              | <3                                | >=3
 validatie   | Validatie dataset-upload   | 3       | aantal fouten | <1                              | <6                                | >=6
 
 **Kwaliteitseisen putten**  
@@ -193,7 +194,8 @@ VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=
 
 * Past het objecttype bij het stelseltype?
 * Is het objecttype concreet genoeg? Objecten binnen GWSW-filter analyseren, kunnen te abstract zijn. Toetsing op aantal-ongefilterd kan dan vervallen.
-* Upload-validatie verder verfijnen: wordt GGN Monitor
+* Controle op putten ten opzichte van vrijverval-leiding (aantal en lengte). Let op, vergelijk geen onzekerheden.
+* Upload-validatie verder verfijnen: wordt GGN Monitor. De algemene validatie-uitspraak vervangen door (uitbreiding van) detail-kwaliteitseisen.
 
 ### Algemene kwaliteit per gemeente
 
