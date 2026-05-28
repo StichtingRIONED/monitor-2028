@@ -16,11 +16,11 @@ Vragen over deze website en de Monitor Gemeentelijke Watertaken 2028 kunt u stel
 
 # Inleiding
 
-...
+Hier globale toelichting
 
 ## Doel en toepassing
 
-...
+Breed van de Monitor en focus op dataverzameling van vaste objectgegevens via het GWSW-platform.
 
 ## Leeswijzer
 
