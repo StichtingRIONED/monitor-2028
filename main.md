@@ -16,21 +16,26 @@ Vragen over deze website en de Monitor Gemeentelijke Watertaken 2028 kunt u stel
 
 # Inleiding
 
-...
+Met de Monitor gemeentelijke watertaken 2028 wordt een actueel inzicht gegeven in hoe het stedelijk waterbeheer er in ons land voor staat, bijvoorbeeld op het gebied van reiniging en inspectie, 
+onderzoek naar het functioneren, renovatie en vervanging, innovatie, klimaatadaptatie en financiën.
+De monitor gemeentelijke watertaken is ontstaan uit de Benchmark Rioleringszorg, waarin gemeenten hun stelselkenmerken, organisatie en financiën konden vergelijken om zich te verbeteren. 
+Omdat het aanleveren van data voor gemeenten erg intensief is, is in 2016 de keuze gemaakt om de benchmark te gebruiken als een bondige verantwoording door de sector als geheel; een monitor. 
+Gezien alle ontwikkelingen in de gebouwde omgeving vindt Stichting RIONED het van belang om het beeld van het huidige stedelijk waterbeheer actueel te houden en de monitor opnieuw uit te vragen.
+Gezien de enorme inspanning die het invullen van de vragenlijst van de vraagt zal Stichting RIONED de analyses over de aanwezige stelsels en objecten zoveel mogelijk vanuit datasets op de GWSW Server. 
 
 ## Doel en toepassing
 
-...
-
-## Leeswijzer
-
-...
+De monitor heeft een agenderende functie, om gemeenten te stimuleren doelen vast te stellen en inzicht in doelrealisatie op te bouwen en te communiceren naar bestuur en maatschappij. 
+De vragen zullen zo veel mogelijk aansluiten bij de voorgaande vragenlijsten om de antwoorden te kunnen vergelijken en eventuele trends te herkennen.
 
 # Projectbeschrijving
 
 ## Opzet en organisatie
 
-...
+Stichting RIONED zal de rioleringsdata die zijn gepubliceerd op de GWSW-server gebruiken om de Monitor Gemeentelijke watertaken 2028 vooraf in te vullen. 
+Daarvoor is het nodig dat deze data voldoende actueel, volledig en accuraat zijn en zo goed mogelijk volgens de GWSW-standaard zijn geregistreerd. 
+Stichting RIONED gaat daarom handreikingen maken met instructies per beheerapplicatie hoe de GWSW-conforme registratie het beste kan. 
+En zal deze werkwijze afstemmen met de beheerpakketleveranciers en GWSW-adviseurs.
 
 ## Gebruik van het GWSW
 
