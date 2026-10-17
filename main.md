@@ -198,8 +198,8 @@ lengte                 | Gemiddelde leidinglengte            | 0       | m  | >=
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=80                            | >=70                              | <70
 
 
-*) De kwaliteitseis "filter" meet geen oneigenlijke objecttypen - die buiten het monitor vallen - in de dataset voorkomen, aansluitingen horen bijvoorbeeld in een aparte dataset.
-De norm voor bijzondere leidingobjecten is soepeler omdat een dataset ook duikers en watergangen kan bevatten. Die vallen vooralsnog buiten de Monitor 2028.
+*) De kwaliteitseis "filter" meet objecttypen die buiten het monitor-filter vallen maar wel in de dataset met hoofdriolering voorkomen. Aansluitingen horen bijvoorbeeld in een aparte dataset.  
+De norm voor bijzondere leidingobjecten is ruimer omdat de dataset ook duikers en watergangen kan bevatten. Die vallen vooralsnog buiten de Monitor 2028.
 
 <mark><b>Optionele kwaliteitseisen (verder uitwerken)</b></mark>
 
