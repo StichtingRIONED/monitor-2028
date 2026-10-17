@@ -175,8 +175,8 @@ validatie   | Validatie dataset-upload   | 3       | aantal fouten | <1         
 
 id           | melding                          | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 -------------|----------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
-aantal       | Aantal putten/inwoners           | 3       | %  | >5 <100                         | >0                                | =0
-filter       | Aantal putten/aantal-ongefilterd | 0       | %  | >95                             | >=80                              | <80
+aantal       | Aantal putten tov inwoners       | 3       | %  | >5 <100                         | >0                                | =0
+filter       | Bijzondere objecttypen *)        | 0       | %  | <10                             | <=20                              | >20
 jaar         | Aanlegjaar aanwezig?             | 0       | %  | >=5                             | >0                                | =0
 Inspectieput | Inspectieputten aanwezig?        | 0       | %  | >=85                            | >=80                              | <80
 
@@ -184,38 +184,40 @@ Inspectieput | Inspectieputten aanwezig?        | 0       | %  | >=85           
 
 id     | melding                              | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 -------|--------------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
-filter | Aantal bouwwerken/aantal-ongefilterd | 0       | %  | >95                             | >=80                              | <80
+filter | Bijzondere objecttypen *)            | 0       | %  | <10                             | <=20                              | >20
 jaar   | Aanlegjaar aanwezig?                 | 0       | %  | >=95                            | >=80                              | <80
 
 **Kwaliteitseisen leidingen**  
 
 id                     | melding                             | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 -----------------------|-------------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
-aantal                 | Aantal leidingen/inwoners           | 3       | %  | >5 <100                         | >0                                | =0
-filter                 | Aantal leidingen/aantal-ongefilterd | 0       | %  | >95                             | >=80                              | <80
+aantal                 | Aantal leidingen tov inwoners       | 3       | %  | >5 <100                         | >0                                | =0
+filter                 | Bijzondere objecttypen *)           | 0       | %  | <20                             | <=30                              | >30
 jaar                   | Aanlegjaar aanwezig?                | 0       | %  | >=95                            | >=80                              | <80
 lengte                 | Gemiddelde leidinglengte            | 0       | m  | >=30                            | >=20                              | <20
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=80                            | >=70                              | <70
 
 
+*) De kwaliteitseis "filter" meet geen oneigenlijke objecttypen - die buiten het monitor vallen - in de dataset voorkomen, aansluitingen horen bijvoorbeeld in een aparte dataset.
+De norm voor bijzondere leidingobjecten is soepeler omdat een dataset ook duikers en watergangen kan bevatten. Die vallen vooralsnog buiten de Monitor 2028.
+
 <mark><b>Optionele kwaliteitseisen (verder uitwerken)</b></mark>
 
 * Past het objecttype bij het stelseltype?
-* Is het objecttype concreet genoeg? Objecten binnen GWSW-filter analyseren, kunnen te abstract zijn. Toetsing op aantal-ongefilterd kan dan vervallen.
+* Is het objecttype concreet genoeg? Objecten binnen GWSW-filter analyseren, kunnen te abstract zijn.
 * Controle op putten ten opzichte van vrijverval-leiding (aantal en lengte). Let op, vergelijk geen onzekerheden.
 * Upload-validatie verder verfijnen: wordt GGN Monitor. De algemene validatie-uitspraak vervangen door (uitbreiding van) detail-kwaliteitseisen.
 
-### Algemene kwaliteit per gemeente
+### Basiskwaliteit per gemeente
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
+Op dit moment (vanaf 1 mei 2026) wordt de basiskwaliteit - fase 1 gemeten. Dat zijn de kwaliteitseisen in de tabel met een gewicht > 0. (4 stuks)
 
 <div class="box">
 <i>Stapsgewijze aanscherping gewenste kwaliteitniveau</i><br/><br/>
 Het is de bedoeling de kwaliteitsmeting in de komende jaren geleidelijk aan te scherpen.
 De op dit moment gebruikte kwaliteitseisen voor bepaling van de algemene kwaliteit per gemeente hebben een **gewicht groter dan 0** in het overzicht hiervoor.
 </div>
-
-Op dit moment (vanaf 1 mei 2026) worden alleen enkele basiskwaliteiten gemeten.
 
 Voor de algemene dataset-kwaliteit hanteren we vijf niveaus/groenwaarden (van hoog naar laag): 
 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
