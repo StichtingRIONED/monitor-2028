@@ -122,6 +122,10 @@ lengte       | De gemiddelde lengte per leiding. De leidinglengte tov inwoners g
 * Controle op putten ten opzichte van vrijverval-leiding (aantal en lengte). Let op, vergelijk geen onzekerheden.
 * Upload-validatie verder verfijnen: wordt GGN Monitor. De algemene validatie-uitspraak vervangen door (uitbreiding van) detail-kwaliteitseisen.
 
+## Waardering kwaliteitseisen - fase 1
+
+In de volgende tabellen staat de waardering per kwaliteiteis in fase 1. De kolom "gewicht" bevat de waarde per kwaliteitseis, uitgedrukt in een cijfer van 0-3. 
+Eisen met een gewicht "0" doen nog niet mee in fase 1 van de meting.
 
 **Waardering kwaliteit algemeen**  
 
@@ -130,7 +134,7 @@ id          | melding                    | gewicht | eh            | <div class=
 actualiteit | Dataset voldoende actueel? | 1       | jaar          | <1                              | <3                                | >=3
 validatie   | Validatie dataset-upload   | 3       | aantal fouten | <1                              | <6                                | >=6
 
-***Waardering kwaliteit putten**  
+**Waardering kwaliteit putten**  
 
 id           | melding                    | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 -------------|----------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
@@ -139,14 +143,14 @@ filter       | Bijzondere objecttypen     | 0       | %  | <10                  
 jaar         | Aanlegjaar aanwezig?       | 0       | %  | >=5                             | >0                                | =0
 Inspectieput | Inspectieputten aanwezig?  | 0       | %  | >=85                            | >=80                              | <80
 
-***Waardering kwaliteit bouwwerken**  
+**Waardering kwaliteit bouwwerken**  
 
 id     | melding                | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 -------|------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
 filter | Bijzondere objecttypen | 0       | %  | <10                             | <=20                              | >20
 jaar   | Aanlegjaar aanwezig?   | 0       | %  | >=95                            | >=80                              | <80
 
-***Waardering kwaliteit leidingen**  
+**Waardering kwaliteit leidingen**  
 
 id                     | melding                           | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 -----------------------|-----------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
@@ -156,7 +160,7 @@ jaar                   | Aanlegjaar aanwezig?              | 0       | %  | >=95
 lengte                 | Gemiddelde leidinglengte          | 0       | m  | >=30                            | >=20                              | <20
 VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig? | 0       | %  | >=80                            | >=70                              | <70
 
-## Basiskwaliteit per gemeente
+## Meting basiskwaliteit - fase 1
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
 Op dit moment (vanaf 1 mei 2026) wordt de basiskwaliteit - fase 1 gemeten. Dat zijn de kwaliteitseisen in de tabel met een gewicht > 0. (4 stuks)
