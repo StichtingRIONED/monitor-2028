@@ -11,6 +11,34 @@
   .grey{background-color: #E2E2E2;width: 20px;}
 </style>
 
+[apps.gwsw.nl]: https://apps.gwsw.nl
+[apps.gwsw.nl - overzicht gemeenten]: https://apps.gwsw.nl/item_monitor
+
+[Gemengd stelsel]: http://data.gwsw.nl/GemengdStelsel
+[Persleidingstelsel]: http://data.gwsw.nl/Persleidingsysteem
+[Drukriolering]: http://data.gwsw.nl/Drukriolering
+
+[Rioolput]: https://data.gwsw.nl/Rioolput
+[Inspectieput]: http://data.gwsw.nl/Inspectieput
+[Stuwput]: http://data.gwsw.nl/Stuwput
+[Overstortput]: http://data.gwsw.nl/Overstortput
+
+[Gemaal]: http://data.gwsw.nl/Gemaal
+[Reservoir]: http://data.gwsw.nl/Reservoir
+[Uitlaatconstructie]: http://data.gwsw.nl/Uitlaatconstructie
+[Rioolgemaal]: http://data.gwsw.nl/Rioolgemaal
+
+[Mechanische rioolleiding]: http://data.gwsw.nl/MechanischeRioolleiding
+[Vrijverval rioolleiding]: http://data.gwsw.nl/VrijvervalRioolleiding
+[Mechanische transportleiding]: http://data.gwsw.nl/MechanischeTransportleiding
+[Vrijverval transportleiding]: http://data.gwsw.nl/VrijvervalTransportleiding
+[Open leiding]: http://data.gwsw.nl/OpenLeiding
+[Drain]: http://data.gwsw.nl/Drain
+[Gemengd riool]: http://data.gwsw.nl/GemengdRiool
+[Persleiding]: http://data.gwsw.nl/Persleiding
+[Goot]: http://data.gwsw.nl/Goot
+[Drukleiding]: http://data.gwsw.nl/Drukleiding
+
 Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project. Arianne Fijan is de verantwoordelijk projectleider. 
 Vragen over deze website en de Monitor Gemeentelijke Watertaken 2028 kunt u stellen via arianne.fijan@rioned.org. 
 
@@ -22,7 +50,7 @@ bijvoorbeeld op het gebied van reiniging en inspectie, onderzoek naar het functi
 De monitor gemeentelijke watertaken is ontstaan uit de Benchmark Rioleringszorg, waarin gemeenten hun stelselkenmerken, organisatie en financiën konden vergelijken om zich te verbeteren. 
 Omdat het aanleveren van data voor gemeenten erg intensief is, is in 2016 de keuze gemaakt om de benchmark te gebruiken als een bondige verantwoording door de sector als geheel; een monitor.   
 
-Gezien alle ontwikkelingen in de gebouwde omgeving vindt Stichting RIONED het van belang om het beeld van het huidige stedelijk waterbeheer actueel te houden en de monitor opnieuw uit te vragen.
+Gezien alle ontwikkelingen in de gebouwd omgeving vindt Stichting RIONED het van belang om het beeld van het huidige stedelijk waterbeheer actueel te houden en de monitor opnieuw uit te vragen.
 
 Gezien de enorme inspanning die het invullen van de vragenlijst van de vraagt zal Stichting RIONED de analyses over de aanwezige stelsels en objecten zoveel mogelijk vanuit datasets op de GWSW Server. 
 
@@ -31,9 +59,7 @@ Gezien de enorme inspanning die het invullen van de vragenlijst van de vraagt za
 De monitor heeft een agenderende functie, om gemeenten te stimuleren doelen vast te stellen en inzicht in doelrealisatie op te bouwen en te communiceren naar bestuur en maatschappij. 
 De vragen zullen zo veel mogelijk aansluiten bij de voorgaande vragenlijsten om de antwoorden te kunnen vergelijken en eventuele trends te herkennen.
 
-# Projectbeschrijving
-
-## Opzet en organisatie
+# Opzet en organisatie
 
 Stichting RIONED zal de rioleringsdata die zijn gepubliceerd op de GWSW-server gebruiken om de Monitor Gemeentelijke watertaken 2028 vooraf in te vullen. 
 Daarvoor is het nodig dat deze data voldoende actueel, volledig en accuraat zijn en zo goed mogelijk volgens de GWSW-standaard zijn geregistreerd. 
@@ -62,95 +88,9 @@ In de loop der tijd wordt de meting van het algemene kwaliteitsniveau aangescher
 
 De peiling wordt dagelijks bijgewerkt en gepubliceerd via 
 
-* [apps.gwsw.nl - monitor]
+* [apps.gwsw.nl - overzicht gemeenten]
 
-Aan de basis van de gegevenspeiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeentelijke objectgegevens opvragen.
-* Opvragen gegevens van de rioolputten
-* Opvragen gegevens van de bouwwerken
-* Opvragen gegevens van de rioolleidingen
-
-[apps.gwsw.nl]: https://apps.gwsw.nl
-[apps.gwsw.nl - monitor]: https://apps.gwsw.nl/item_monitor
-
-[Gemengd stelsel]: http://data.gwsw.nl/GemengdStelsel
-[Persleidingstelsel]: http://data.gwsw.nl/Persleidingsysteem
-[Drukriolering]: http://data.gwsw.nl/Drukriolering
-
-[Rioolput]: https://data.gwsw.nl/Rioolput
-[Inspectieput]: http://data.gwsw.nl/Inspectieput
-[Stuwput]: http://data.gwsw.nl/Stuwput
-[Overstortput]: http://data.gwsw.nl/Overstortput
-
-[Gemaal]: http://data.gwsw.nl/Gemaal
-[Reservoir]: http://data.gwsw.nl/Reservoir
-[Uitlaatconstructie]: http://data.gwsw.nl/Uitlaatconstructie
-[Rioolgemaal]: http://data.gwsw.nl/Rioolgemaal
-
-[Mechanische rioolleiding]: http://data.gwsw.nl/MechanischeRioolleiding
-[Vrijverval rioolleiding]: http://data.gwsw.nl/VrijvervalRioolleiding
-[Mechanische transportleiding]: http://data.gwsw.nl/MechanischeTransportleiding
-[Vrijverval transportleiding]: http://data.gwsw.nl/VrijvervalTransportleiding
-[Open leiding]: http://data.gwsw.nl/OpenLeiding
-[Drain]: http://data.gwsw.nl/Drain
-[Gemengd riool]: http://data.gwsw.nl/GemengdRiool
-[Persleiding]: http://data.gwsw.nl/Persleiding
-[Goot]: http://data.gwsw.nl/Goot
-[Drukleiding]: http://data.gwsw.nl/Drukleiding
-
-### Putten
-Van de putten worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
-* [Rioolput]
-
-GWSW-subtypen van putten die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
-
-Een voorbeeld van het query-resultaat:
-
-Stelsel           | groep      | type           | aantal | jaar
-------------------|------------|----------------|--------|-----
-[Gemengd stelsel] | [Rioolput] | [Rioolput]     | 1      | 1980
-[Gemengd stelsel] | [Rioolput] | [Inspectieput] | 7      | 1970
-[Gemengd stelsel] | [Rioolput] | [Stuwput]      | 1      | 1970
-[Gemengd stelsel] | [Rioolput] | [Overstortput] | 1      | 1970
-
-### Bouwwerken
-Van de bouwwerken worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
-* [Gemaal]
-* [Reservoir]
-* [Uitlaatconstructie]
-
-GWSW-subtypen van bouwwerken die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
-
-Een voorbeeld van het query-resultaat:
-
-Stelsel           | groep    | type          | aantal | jaar
-------------------|----------|---------------|--------|-----
-[Gemengd stelsel] | [Gemaal] | [Rioolgemaal] | 1      | 1980
-
-### Leidingen
-Van de leidingen worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
-* [Mechanische rioolleiding]
-* [Vrijverval rioolleiding]
-* [Mechanische transportleiding]
-* [Vrijverval transportleiding]
-* [Open leiding]
-* [Drain]
-
-GWSW-subtypen van leidingen die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
-
-Een voorbeeld van het query-resultaat:
-
-Stelsel              | groep                          | type            | aantal | jaar | Lining | somLengte
----------------------|--------------------------------|-----------------|--------|------|--------|----------
-[Drukriolering]      | [Mechanische rioolleiding]     | [Drukleiding]   | 1      |      |        | 155.67
-[Gemengd stelsel]    | [Vrijverval rioolleiding]      | [Gemengd riool] | 10     | 1970 |        | 392.02
-[Gemengd stelsel]    | [Vrijverval rioolleiding]      | [Gemengd riool] | 1      | 1980 |        | 41.0
-[Gemengd stelsel]    | [Vrijverval rioolleiding]      | [Gemengd riool] | 1      | 1970 | ja     | 38.0
-[Persleidingstelsel] | [Mechanische transportleiding] | [Persleiding]   | 2      |      |        | 264.0
-[Gemengd stelsel]    | [Open leiding]                 | [Goot]          | 1      |      |        | 30.0
-[Gemengd stelsel]    | [Drain]                        | [Drain]         | 1      | 1970 |        | 42.0
-
-
-### Bepaling gegevenskwaliteit
+## Bepaling gegevenskwaliteit
 
 GWSW Apps meet dagelijks de kwaliteit voor alle NL-gemeenten en presenteert deze op [apps.gwsw.nl - monitor].
 Die site toont op aanvraag ook de details van de kwaliteitsmeting per gemeente. 
@@ -164,51 +104,59 @@ Niveau | Kleur                                                       | Kwaliteit
 
 De gemeentelijke gegevens worden getoetst aan de volgende kwaliteitseisen:
 
-**Kwaliteitseisen algemeen**  
+id           | omschrijving                                                                                                                                                                                                                                                                                                                               | belang
+-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------
+actualiteit  | De meest recente aanleverdatum. De meest optimistische meting, de aangeleverde gegevens kunnen natuurlijk veel eerder zijn geïnventariseerd.                                                                                                                                                                                               | Effectief beheer
+validatie    | De basis-kwaliteitsmeting, uitgevoerd tijdens aanleveren van gegevens. Er wordt gemeten of er wordt voldaan aan het GWSW OroX protocol, zonder verdere toetsing op inhoud.                                                                                                                                                                 | Gebruik GWSW-toepassingen
+aantal       | Een heel basale meting (komen de objecten voor?) van het aantal voorkomens                                                                                                                                                                                                                                                                 | Effectief beheer en gebruik GWSW-toepassingen
+jaar         | Zijn de aanlegjaren bij de objecten bekend?                                                                                                                                                                                                                                                                                                | Effectief beheer
+filter       | De kwaliteitseis "filter" meet objecttypen die buiten het monitor-filter vallen maar wel in de dataset met hoofdriolering voorkomen. Aansluitingen horen bijvoorbeeld in een aparte dataset. De norm voor bijzondere leidingobjecten is ruimer omdat de dataset ook duikers en watergangen kan bevatten (vallen buiten het monitor-filter) | Gebruik GWSW-toepassingen
+lengte       | De gemiddelde lengte per leiding. De leidinglengte tov inwoners geeft ook een goed beeld, er is echter gekozen om deze analyse te splitsen. Naast het aantal leidingen ook de gemiddelde leidinglengte. Daarmee zijn we minder afhankelijk van foute leidinglengtes.                                                                       | Effectief beheer
+"objecttype" | Zijn de meest voorkomende objecttypen in de dataset aanwezig?                                                                                                                                                                                                                                                                              | Effectief beheer
+
+<mark><b>Optionele kwaliteitseisen (verder uitwerken)</b></mark>
+
+* Is het object toegekend aan een stelsel? Stelsel is de belangrijkste groepering, voor functioneren en hydraulische analyses.
+* Past het objecttype bij het stelseltype?
+* Is het objecttype concreet genoeg? Objecten binnen monitor-filter analyseren, kunnen te abstract zijn.
+* Controle op putten ten opzichte van vrijverval-leiding (aantal en lengte). Let op, vergelijk geen onzekerheden.
+* Upload-validatie verder verfijnen: wordt GGN Monitor. De algemene validatie-uitspraak vervangen door (uitbreiding van) detail-kwaliteitseisen.
+
+
+**Waardering kwaliteit algemeen**  
 
 id          | melding                    | gewicht | eh            | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
 ------------|----------------------------|---------|---------------|---------------------------------|-----------------------------------|----------------------------------
 actualiteit | Dataset voldoende actueel? | 1       | jaar          | <1                              | <3                                | >=3
 validatie   | Validatie dataset-upload   | 3       | aantal fouten | <1                              | <6                                | >=6
 
-**Kwaliteitseisen putten**  
+***Waardering kwaliteit putten**  
 
-id           | melding                          | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
--------------|----------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
-aantal       | Aantal putten tov inwoners       | 3       | %  | >5 <100                         | >0                                | =0
-filter       | Bijzondere objecttypen *)        | 0       | %  | <10                             | <=20                              | >20
-jaar         | Aanlegjaar aanwezig?             | 0       | %  | >=5                             | >0                                | =0
-Inspectieput | Inspectieputten aanwezig?        | 0       | %  | >=85                            | >=80                              | <80
+id           | melding                    | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+-------------|----------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
+aantal       | Aantal putten tov inwoners | 3       | %  | >5 <100                         | >0                                | =0
+filter       | Bijzondere objecttypen     | 0       | %  | <10                             | <=20                              | >20
+jaar         | Aanlegjaar aanwezig?       | 0       | %  | >=5                             | >0                                | =0
+Inspectieput | Inspectieputten aanwezig?  | 0       | %  | >=85                            | >=80                              | <80
 
-**Kwaliteitseisen bouwwerken**  
+***Waardering kwaliteit bouwwerken**  
 
-id     | melding                              | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
--------|--------------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
-filter | Bijzondere objecttypen *)            | 0       | %  | <10                             | <=20                              | >20
-jaar   | Aanlegjaar aanwezig?                 | 0       | %  | >=95                            | >=80                              | <80
+id     | melding                | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+-------|------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
+filter | Bijzondere objecttypen | 0       | %  | <10                             | <=20                              | >20
+jaar   | Aanlegjaar aanwezig?   | 0       | %  | >=95                            | >=80                              | <80
 
-**Kwaliteitseisen leidingen**  
+***Waardering kwaliteit leidingen**  
 
-id                     | melding                             | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
------------------------|-------------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
-aantal                 | Aantal leidingen tov inwoners       | 3       | %  | >5 <100                         | >0                                | =0
-filter                 | Bijzondere objecttypen *)           | 0       | %  | <20                             | <=30                              | >30
-jaar                   | Aanlegjaar aanwezig?                | 0       | %  | >=95                            | >=80                              | <80
-lengte                 | Gemiddelde leidinglengte            | 0       | m  | >=30                            | >=20                              | <20
-VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig?   | 0       | %  | >=80                            | >=70                              | <70
+id                     | melding                           | gewicht | eh | <div class="green">&nbsp;</div> | <div class="green_2">&nbsp;</div> | <div class="green_4">&nbsp;</div>
+-----------------------|-----------------------------------|---------|----|---------------------------------|-----------------------------------|----------------------------------
+aantal                 | Aantal leidingen tov inwoners     | 3       | %  | >5 <100                         | >0                                | =0
+filter                 | Bijzondere objecttypen            | 0       | %  | <20                             | <=30                              | >30
+jaar                   | Aanlegjaar aanwezig?              | 0       | %  | >=95                            | >=80                              | <80
+lengte                 | Gemiddelde leidinglengte          | 0       | m  | >=30                            | >=20                              | <20
+VrijvervalRioolleiding | Vrijverval rioolleiding aanwezig? | 0       | %  | >=80                            | >=70                              | <70
 
-
-*) De kwaliteitseis "filter" meet objecttypen die buiten het monitor-filter vallen maar wel in de dataset met hoofdriolering voorkomen. Aansluitingen horen bijvoorbeeld in een aparte dataset.  
-De norm voor bijzondere leidingobjecten is ruimer omdat de dataset ook duikers en watergangen kan bevatten. Die vallen vooralsnog buiten de Monitor 2028.
-
-<mark><b>Optionele kwaliteitseisen (verder uitwerken)</b></mark>
-
-* Past het objecttype bij het stelseltype?
-* Is het objecttype concreet genoeg? Objecten binnen GWSW-filter analyseren, kunnen te abstract zijn.
-* Controle op putten ten opzichte van vrijverval-leiding (aantal en lengte). Let op, vergelijk geen onzekerheden.
-* Upload-validatie verder verfijnen: wordt GGN Monitor. De algemene validatie-uitspraak vervangen door (uitbreiding van) detail-kwaliteitseisen.
-
-### Basiskwaliteit per gemeente
+## Basiskwaliteit per gemeente
 
 De uitspraak over de algemene kwaliteit is gebaseerd op de meetresultaten per kwaliteitseis.
 Op dit moment (vanaf 1 mei 2026) wordt de basiskwaliteit - fase 1 gemeten. Dat zijn de kwaliteitseisen in de tabel met een gewicht > 0. (4 stuks)
@@ -231,4 +179,63 @@ Het algemene kwaliteitniveau is gebaseerd op het gemiddelde van de niveaus per k
 
 Algemene kwaliteitniveau van hoog (=0) naar laag (=4) = (avg / 2) * 4
 &nbsp;&nbsp;<span class="green">&nbsp;&nbsp;&nbsp;</span> <span class="green_1">&nbsp;&nbsp;&nbsp;</span> <span class="green_2">&nbsp;&nbsp;&nbsp;</span> <span class="green_3">&nbsp;&nbsp;&nbsp;</span> <span class="green_4">&nbsp;&nbsp;&nbsp;</span>
+
+# Gegevenspeiling 2028
+
+Aan de basis van de gegevenspeiling voor de Monitor 2028 staan drie queries die gerubriceerd de gemeentelijke objectgegevens opvragen.
+* Opvragen gegevens van de rioolputten
+* Opvragen gegevens van de bouwwerken
+* Opvragen gegevens van de rioolleidingen
+
+## Putten
+Van de putten worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
+* [Rioolput]
+
+GWSW-subtypen van putten die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
+
+Een voorbeeld van het query-resultaat:
+
+Stelsel           | groep      | type           | aantal | jaar
+------------------|------------|----------------|--------|-----
+[Gemengd stelsel] | [Rioolput] | [Rioolput]     | 1      | 1980
+[Gemengd stelsel] | [Rioolput] | [Inspectieput] | 7      | 1970
+[Gemengd stelsel] | [Rioolput] | [Stuwput]      | 1      | 1970
+[Gemengd stelsel] | [Rioolput] | [Overstortput] | 1      | 1970
+
+## Bouwwerken
+Van de bouwwerken worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
+* [Gemaal]
+* [Reservoir]
+* [Uitlaatconstructie]
+
+GWSW-subtypen van bouwwerken die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
+
+Een voorbeeld van het query-resultaat:
+
+Stelsel           | groep    | type          | aantal | jaar
+------------------|----------|---------------|--------|-----
+[Gemengd stelsel] | [Gemaal] | [Rioolgemaal] | 1      | 1980
+
+## Leidingen
+Van de leidingen worden de subtypes van de volgende GWSW-klassen gegroepeerd (zie de kolom "groep" in de volgende tabel):
+* [Mechanische rioolleiding]
+* [Vrijverval rioolleiding]
+* [Mechanische transportleiding]
+* [Vrijverval transportleiding]
+* [Open leiding]
+* [Drain]
+
+GWSW-subtypen van leidingen die buiten deze groepen vallen zijn niet in de Monitor 2028 betrokken.
+
+Een voorbeeld van het query-resultaat:
+
+Stelsel              | groep                          | type            | aantal | jaar | Lining | somLengte
+---------------------|--------------------------------|-----------------|--------|------|--------|----------
+[Drukriolering]      | [Mechanische rioolleiding]     | [Drukleiding]   | 1      |      |        | 155.67
+[Gemengd stelsel]    | [Vrijverval rioolleiding]      | [Gemengd riool] | 10     | 1970 |        | 392.02
+[Gemengd stelsel]    | [Vrijverval rioolleiding]      | [Gemengd riool] | 1      | 1980 |        | 41.0
+[Gemengd stelsel]    | [Vrijverval rioolleiding]      | [Gemengd riool] | 1      | 1970 | ja     | 38.0
+[Persleidingstelsel] | [Mechanische transportleiding] | [Persleiding]   | 2      |      |        | 264.0
+[Gemengd stelsel]    | [Open leiding]                 | [Goot]          | 1      |      |        | 30.0
+[Gemengd stelsel]    | [Drain]                        | [Drain]         | 1      | 1970 |        | 42.0
 
